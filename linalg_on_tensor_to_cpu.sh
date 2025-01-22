@@ -5,9 +5,11 @@
 -convert-linalg-to-affine-loops \
 -lower-affine \
 -canonicalize \
+-expand-strided-metadata \
 -convert-scf-to-cf \
 -finalize-memref-to-llvm \
 -convert-cf-to-llvm \
+-convert-math-to-llvm \
 -convert-arith-to-llvm \
 -convert-func-to-llvm \
 -reconcile-unrealized-casts
